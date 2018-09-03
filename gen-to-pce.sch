@@ -1,0 +1,280 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Genesis 3-button to PC-Engine adapter"
+Date "2018-09-02"
+Rev "0.1"
+Comp "Bradon Kanyid"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS157 U?
+U 1 1 5B8C724A
+P 7500 4200
+F 0 "U?" H 7500 5278 50  0000 C CNN
+F 1 "74LS157" H 7500 5187 50  0000 C CNN
+F 2 "" H 7500 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 7500 4200 50  0001 C CNN
+	1    7500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DB9_Male J?
+U 1 1 5B8C751B
+P 2450 4400
+F 0 "J?" H 2370 3708 50  0000 C CNN
+F 1 "DB9_Male" H 2370 3799 50  0000 C CNN
+F 2 "" H 2450 4400 50  0001 C CNN
+F 3 " ~" H 2450 4400 50  0001 C CNN
+	1    2450 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74HC74 U?
+U 1 1 5B8C7BF6
+P 4550 5050
+F 0 "U?" H 4550 5528 50  0000 C CNN
+F 1 "74HC74" H 4550 5437 50  0000 C CNN
+F 2 "" H 4550 5050 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 4550 5050 50  0001 C CNN
+	1    4550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC74 U?
+U 2 1 5B8C7C6F
+P 6200 5050
+F 0 "U?" H 6200 5528 50  0000 C CNN
+F 1 "74HC74" H 6200 5437 50  0000 C CNN
+F 2 "" H 6200 5050 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 6200 5050 50  0001 C CNN
+	2    6200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC74 U?
+U 3 1 5B8C7CD8
+P 5150 7000
+F 0 "U?" H 5380 7046 50  0000 L CNN
+F 1 "74HC74" H 5380 6955 50  0000 L CNN
+F 2 "" H 5150 7000 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 5150 7000 50  0001 C CNN
+	3    5150 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U?
+U 1 1 5B8C7E8A
+P 3950 5050
+F 0 "U?" H 3950 5367 50  0000 C CNN
+F 1 "74LS04" H 3950 5276 50  0000 C CNN
+F 2 "" H 3950 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3950 5050 50  0001 C CNN
+	1    3950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U?
+U 2 1 5B8C7F8E
+P 5600 5050
+F 0 "U?" H 5600 5367 50  0000 C CNN
+F 1 "74LS04" H 5600 5276 50  0000 C CNN
+F 2 "" H 5600 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5600 5050 50  0001 C CNN
+	2    5600 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 5450 6850 5450
+Wire Wire Line
+	6850 5450 6850 4800
+Wire Wire Line
+	6850 4800 7000 4800
+Wire Wire Line
+	6950 5300 6950 4900
+Wire Wire Line
+	6950 4900 7000 4900
+Wire Wire Line
+	2750 4000 2950 4000
+Wire Wire Line
+	2950 4000 2950 3700
+Wire Wire Line
+	2950 3700 7000 3700
+Wire Wire Line
+	2750 4600 3150 4600
+Wire Wire Line
+	3150 4600 3150 4000
+Wire Wire Line
+	3150 4000 7000 4000
+Wire Wire Line
+	3050 4200 3050 4300
+Wire Wire Line
+	3050 4300 7000 4300
+Wire Wire Line
+	2750 4200 3050 4200
+Wire Wire Line
+	2750 4400 6900 4400
+Wire Wire Line
+	6900 4400 6900 4600
+Wire Wire Line
+	6900 4600 7000 4600
+Wire Wire Line
+	2750 4100 3100 4100
+Wire Wire Line
+	3100 4100 3100 4200
+Wire Wire Line
+	3100 4200 4250 4200
+Wire Wire Line
+	2750 4700 3250 4700
+Wire Wire Line
+	3250 4700 3250 4500
+Wire Wire Line
+	3250 4500 5900 4500
+$Comp
+L 74xx:74LS04 U?
+U 7 1 5B8D2343
+P 6000 7000
+F 0 "U?" H 6230 7046 50  0000 L CNN
+F 1 "74LS04" H 6230 6955 50  0000 L CNN
+F 2 "" H 6000 7000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6000 7000 50  0001 C CNN
+	7    6000 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 6600 1    50   Input ~ 0
++5V
+Text GLabel 6000 6500 1    50   Input ~ 0
++5V
+Text GLabel 5150 7400 3    50   Input ~ 0
+GND
+Text GLabel 6000 7500 3    50   Input ~ 0
+GND
+Text GLabel 7500 5200 0    50   Input ~ 0
+GND
+Text GLabel 7500 3300 0    50   Input ~ 0
++5V
+Wire Wire Line
+	4250 4950 4250 4200
+Connection ~ 4250 4200
+Wire Wire Line
+	4250 4200 7000 4200
+Wire Wire Line
+	5900 4950 5900 4500
+Connection ~ 5900 4500
+Wire Wire Line
+	5900 4500 7000 4500
+Wire Wire Line
+	6850 5450 5300 5450
+Wire Wire Line
+	3650 5450 3650 5050
+Connection ~ 6850 5450
+Wire Wire Line
+	5300 5050 5300 5450
+Connection ~ 5300 5450
+Wire Wire Line
+	5300 5450 3650 5450
+Wire Wire Line
+	6750 3900 7000 3900
+Wire Wire Line
+	3650 5450 3000 5450
+Wire Wire Line
+	3000 5450 3000 4300
+Wire Wire Line
+	3000 4300 2750 4300
+Connection ~ 3650 5450
+Text GLabel 2750 4800 2    50   Input ~ 0
++5V
+Text GLabel 2750 4500 2    50   Input ~ 0
+GND
+$Comp
+L Connector:Conn_01x08_Female J?
+U 1 1 5B8FEB16
+P 8850 4000
+F 0 "J?" H 8877 3976 50  0000 L CNN
+F 1 "Conn_01x08_Female" H 8877 3885 50  0000 L CNN
+F 2 "" H 8850 4000 50  0001 C CNN
+F 3 "~" H 8850 4000 50  0001 C CNN
+	1    8850 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3600 8050 3600
+Wire Wire Line
+	8000 3900 8650 3900
+Wire Wire Line
+	8050 3600 8050 3800
+Wire Wire Line
+	8050 3800 8650 3800
+Wire Wire Line
+	8000 4200 8050 4200
+Wire Wire Line
+	8050 4200 8050 4000
+Wire Wire Line
+	8050 4000 8650 4000
+Wire Wire Line
+	8150 4500 8150 4100
+Wire Wire Line
+	8150 4100 8650 4100
+Wire Wire Line
+	8000 4500 8150 4500
+Wire Wire Line
+	8250 5450 8250 4200
+Wire Wire Line
+	8250 4200 8650 4200
+Wire Wire Line
+	8650 4300 8350 4300
+Wire Wire Line
+	8350 4300 8350 5300
+Wire Wire Line
+	6950 5300 8350 5300
+Text GLabel 8650 4400 0    50   Input ~ 0
+GND
+$Comp
+L power:GND #PWR?
+U 1 1 5B947D21
+P 8650 4400
+F 0 "#PWR?" H 8650 4150 50  0001 C CNN
+F 1 "GND" H 8655 4227 50  0000 C CNN
+F 2 "" H 8650 4400 50  0001 C CNN
+F 3 "" H 8650 4400 50  0001 C CNN
+	1    8650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5B947DCE
+P 8650 3700
+F 0 "#PWR?" H 8650 3550 50  0001 C CNN
+F 1 "+5V" H 8665 3873 50  0000 C CNN
+F 2 "" H 8650 3700 50  0001 C CNN
+F 3 "" H 8650 3700 50  0001 C CNN
+	1    8650 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 3700 0    50   Input ~ 0
++5V
+Wire Wire Line
+	4850 4950 4950 4950
+Wire Wire Line
+	4950 4950 4950 3600
+Wire Wire Line
+	4950 3600 7000 3600
+Wire Wire Line
+	6750 3900 6750 4950
+Wire Wire Line
+	6750 4950 6500 4950
+Text GLabel 4550 4750 2    50   Input ~ 0
++5V
+Text GLabel 4550 5350 2    50   Input ~ 0
++5V
+Text GLabel 6200 5350 2    50   Input ~ 0
++5V
+Text GLabel 6200 4750 2    50   Input ~ 0
++5V
+$EndSCHEMATC

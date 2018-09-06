@@ -25,8 +25,8 @@ PC-Engine Controller
 |Pin | Type | Name (Select=GND) | Name (Select=+5V) |
 |----|------|-------------------|-------------------|
 |1   |      | +5VDC             | +5VDC             |
-|2   | Out  | Button B (I)      | Up                |
-|3   | Out  | Button C (II)     | Right             |
+|2   | Out  | Button C (I)      | Up                |
+|3   | Out  | Button B (II)     | Right             |
 |4   | Out  | Button A (Sel)    | Down              |
 |5   | Out  | Start             | Left              |
 |6   | In   | Select            | Select            |
@@ -36,11 +36,13 @@ PC-Engine Controller
 PC-Engine Extension Wiring
 ==========================
 
-|1 | Brown
-|2 | Red
-|3 | Orange
-|4 | Yellow
-|5 | Green
-|6 | Blue
-|7 | Purple
-|8 | Black
+|Pin | Color |
+|----|-------|
+|1   | Brown |
+|2   | Red   |
+|3   | Orange|
+|4   | Yellow|
+|5   | Green |
+|6   | Blue  |
+|7   | Purple|
+|8   | Black |

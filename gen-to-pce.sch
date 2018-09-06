@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:gen-to-pce-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Genesis 3-button to PC-Engine adapter"
-Date "2018-09-02"
-Rev "0.1"
+Date "2018-09-06"
+Rev "0.2"
 Comp "Bradon Kanyid"
 Comment1 ""
 Comment2 ""
@@ -180,8 +181,6 @@ Connection ~ 5300 5450
 Wire Wire Line
 	5300 5450 3650 5450
 Wire Wire Line
-	6750 3900 7000 3900
-Wire Wire Line
 	3650 5450 3000 5450
 Wire Wire Line
 	3000 5450 3000 4300
@@ -262,11 +261,7 @@ Text GLabel 8650 3700 0    50   Input ~ 0
 Wire Wire Line
 	4850 4950 4950 4950
 Wire Wire Line
-	4950 4950 4950 3600
-Wire Wire Line
-	4950 3600 7000 3600
-Wire Wire Line
-	6750 3900 6750 4950
+	4950 4950 4950 3900
 Wire Wire Line
 	6750 4950 6500 4950
 Text GLabel 4550 4750 2    50   Input ~ 0
@@ -277,4 +272,10 @@ Text GLabel 6200 5350 2    50   Input ~ 0
 +5V
 Text GLabel 6200 4750 2    50   Input ~ 0
 +5V
+Wire Wire Line
+	4950 3900 7000 3900
+Wire Wire Line
+	6750 4950 6750 3600
+Wire Wire Line
+	6750 3600 7000 3600
 $EndSCHEMATC

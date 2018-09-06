@@ -32,3 +32,15 @@ PC-Engine Controller
 |6   | In   | Select            | Select            |
 |7   | In   | /Enable           | /Enable           |
 |8   |      | Ground            | Ground            |
+
+PC-Engine Extension Wiring
+==========================
+
+|1 | Brown
+|2 | Red
+|3 | Orange
+|4 | Yellow
+|5 | Green
+|6 | Blue
+|7 | Purple
+|8 | Black

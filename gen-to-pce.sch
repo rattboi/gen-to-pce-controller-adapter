@@ -192,13 +192,13 @@ Text GLabel 2750 4800 2    50   Input ~ 0
 Text GLabel 2750 4500 2    50   Input ~ 0
 GND
 $Comp
-L Connector:Conn_01x08_Female J2
+L Connector_Generic_Shielded:Conn_01x08_Shielded J2
 U 1 1 5B8FEB16
 P 8850 4000
 F 0 "J2" H 8877 3976 50  0000 L CNN
 F 1 "Conn_01x08_Female" H 8877 3885 50  0000 L CNN
 F 2 "w_conn_av:minidin-8" H 8850 4000 50  0001 C CNN
-F 3 "~" H 8850 4000 50  0001 C CNN
+F 3 "https://www.cui.com/product/resource/digikeypdf/md-sg-series.pdf" H 8850 4000 50  0001 C CNN
 	1    8850 4000
 	1    0    0    -1  
 $EndComp
@@ -232,17 +232,17 @@ Wire Wire Line
 	8350 4300 8350 5300
 Wire Wire Line
 	6950 5300 8350 5300
-Text GLabel 8650 4400 0    50   Input ~ 0
+Text GLabel 8650 4600 0    50   Input ~ 0
 GND
 $Comp
 L power:GND #PWR0101
 U 1 1 5B947D21
-P 8650 4400
-F 0 "#PWR0101" H 8650 4150 50  0001 C CNN
-F 1 "GND" H 8655 4227 50  0000 C CNN
-F 2 "" H 8650 4400 50  0001 C CNN
-F 3 "" H 8650 4400 50  0001 C CNN
-	1    8650 4400
+P 8650 4600
+F 0 "#PWR0101" H 8650 4350 50  0001 C CNN
+F 1 "GND" H 8655 4427 50  0000 C CNN
+F 2 "" H 8650 4600 50  0001 C CNN
+F 3 "" H 8650 4600 50  0001 C CNN
+	1    8650 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -279,22 +279,10 @@ Wire Wire Line
 Wire Wire Line
 	6750 3600 7000 3600
 $Comp
-L power:GND #PWR?
-U 1 1 5B934A3C
-P 8650 4400
-F 0 "#PWR?" H 8650 4150 50  0001 C CNN
-F 1 "GND" H 8655 4227 50  0000 C CNN
-F 2 "" H 8650 4400 50  0001 C CNN
-F 3 "" H 8650 4400 50  0001 C CNN
-	1    8650 4400
-	1    0    0    -1  
-$EndComp
-Connection ~ 8650 4400
-$Comp
-L power:+5V #PWR?
+L power:+5V #PWR0104
 U 1 1 5B934BDC
 P 8650 3700
-F 0 "#PWR?" H 8650 3550 50  0001 C CNN
+F 0 "#PWR0104" H 8650 3550 50  0001 C CNN
 F 1 "+5V" H 8665 3873 50  0000 C CNN
 F 2 "" H 8650 3700 50  0001 C CNN
 F 3 "" H 8650 3700 50  0001 C CNN
@@ -302,4 +290,75 @@ F 3 "" H 8650 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8650 3700
+$Comp
+L 74xx:74HC04 U1
+U 3 1 5B968A1B
+P 2450 6150
+F 0 "U1" H 2600 6400 50  0000 C CNN
+F 1 "74HC04" H 2650 6300 50  0000 C CNN
+F 2 "" H 2450 6150 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 2450 6150 50  0001 C CNN
+	3    2450 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U1
+U 4 1 5B968A9D
+P 2450 6500
+F 0 "U1" H 2600 6700 50  0000 C CNN
+F 1 "74HC04" H 2650 6600 50  0000 C CNN
+F 2 "" H 2450 6500 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 2450 6500 50  0001 C CNN
+	4    2450 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U1
+U 5 1 5B968B21
+P 2450 6850
+F 0 "U1" H 2600 7100 50  0000 C CNN
+F 1 "74HC04" H 2650 7000 50  0000 C CNN
+F 2 "" H 2450 6850 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 2450 6850 50  0001 C CNN
+	5    2450 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U1
+U 6 1 5B968BA2
+P 2450 7200
+F 0 "U1" H 2600 7400 50  0000 C CNN
+F 1 "74HC04" H 2650 7300 50  0000 C CNN
+F 2 "" H 2450 7200 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 2450 7200 50  0001 C CNN
+	6    2450 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6150 2150 6500
+Connection ~ 2150 6500
+Wire Wire Line
+	2150 6500 2150 6850
+Connection ~ 2150 6850
+Wire Wire Line
+	2150 6850 2150 7200
+Connection ~ 2150 7200
+Wire Wire Line
+	2150 7200 2150 7400
+$Comp
+L power:GND #PWR0105
+U 1 1 5B96A6DC
+P 2150 7400
+F 0 "#PWR0105" H 2150 7150 50  0001 C CNN
+F 1 "GND" H 2155 7227 50  0000 C CNN
+F 2 "" H 2150 7400 50  0001 C CNN
+F 3 "" H 2150 7400 50  0001 C CNN
+	1    2150 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4400 8650 4600
+Wire Wire Line
+	8650 4600 8850 4600
+Connection ~ 8650 4600
 $EndSCHEMATC

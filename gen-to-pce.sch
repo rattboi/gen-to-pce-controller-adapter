@@ -181,12 +181,7 @@ Connection ~ 5300 5450
 Wire Wire Line
 	5300 5450 3650 5450
 Wire Wire Line
-	3650 5450 3000 5450
-Wire Wire Line
-	3000 5450 3000 4300
-Wire Wire Line
 	3000 4300 2750 4300
-Connection ~ 3650 5450
 Text GLabel 2750 4800 2    50   Input ~ 0
 +5V
 Text GLabel 2750 4500 2    50   Input ~ 0
@@ -293,24 +288,24 @@ Connection ~ 8650 3700
 $Comp
 L 74xx:74HC04 U1
 U 3 1 5B968A1B
-P 2450 6150
-F 0 "U1" H 2600 6400 50  0000 C CNN
-F 1 "74HC04" H 2650 6300 50  0000 C CNN
-F 2 "" H 2450 6150 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 2450 6150 50  0001 C CNN
-	3    2450 6150
-	1    0    0    -1  
+P 3350 5750
+F 0 "U1" H 3500 6000 50  0000 C CNN
+F 1 "74HC04" H 3550 5900 50  0000 C CNN
+F 2 "" H 3350 5750 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 3350 5750 50  0001 C CNN
+	3    3350 5750
+	-1   0    0    1   
 $EndComp
 $Comp
 L 74xx:74HC04 U1
 U 4 1 5B968A9D
-P 2450 6500
-F 0 "U1" H 2600 6700 50  0000 C CNN
-F 1 "74HC04" H 2650 6600 50  0000 C CNN
-F 2 "" H 2450 6500 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 2450 6500 50  0001 C CNN
-	4    2450 6500
-	1    0    0    -1  
+P 3350 6150
+F 0 "U1" H 3500 6350 50  0000 C CNN
+F 1 "74HC04" H 3550 6250 50  0000 C CNN
+F 2 "" H 3350 6150 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 3350 6150 50  0001 C CNN
+	4    3350 6150
+	-1   0    0    1   
 $EndComp
 $Comp
 L 74xx:74HC04 U1
@@ -335,12 +330,6 @@ F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT04.pdf" H 2450 7200 50  000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 6150 2150 6500
-Connection ~ 2150 6500
-Wire Wire Line
-	2150 6500 2150 6850
-Connection ~ 2150 6850
-Wire Wire Line
 	2150 6850 2150 7200
 Connection ~ 2150 7200
 Wire Wire Line
@@ -361,4 +350,17 @@ Wire Wire Line
 Wire Wire Line
 	8650 4600 8850 4600
 Connection ~ 8650 4600
+Wire Wire Line
+	3050 5750 3050 5950
+Wire Wire Line
+	3050 5950 3650 5950
+Wire Wire Line
+	3650 5950 3650 6150
+Wire Wire Line
+	3650 5450 3650 5750
+Connection ~ 3650 5450
+Wire Wire Line
+	3000 6150 3050 6150
+Wire Wire Line
+	3000 4300 3000 6150
 $EndSCHEMATC

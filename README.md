@@ -4,10 +4,8 @@ Simple Genesis 3-button to PC-Engine adapter
 Tested on breadboard, test PCBs incoming
 
 ![PCB Front][pcb_front]
-![PCB Back][pcb_back]
 
-[pcb_front]: https://github.com/rattboi/gen-to-pce-controller-adapter/raw/master/images/front-pcb.png "Front PCB"
-[pcb_back]: https://github.com/rattboi/gen-to-pce-controller-adapter/raw/master/images/back-pcb.png "Back PCB"
+[pcb_front]: https://github.com/rattboi/gen-to-pce-controller-adapter/raw/master/images/3d-render.png "Front PCB"
 
 Genesis Controller
 ==================

@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 13)
+    (drawings 15)
     (tracks 242)
     (zones 0)
     (modules 12)
@@ -289,7 +289,7 @@
     (descr "E-Switch slide switch, EG series, DPDT, right angle, http://spec_sheets.e-switch.com/specs/P040170.pdf")
     (tags "switch DPDT")
     (path /5B9F6787)
-    (fp_text reference SW1 (at -4.826 1.5875) (layer F.SilkS)
+    (fp_text reference SW1 (at 4.1402 4.7117) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value SW_DPDT_x2 (at 4 14.45) (layer F.Fab)
@@ -581,7 +581,7 @@
   )
 
   (module Symbol:KiCad-Logo2_6mm_SilkScreen (layer F.Cu) (tedit 0) (tstamp 5BD8741B)
-    (at 120.0912 99.9236)
+    (at 117.7798 99.8728)
     (descr "KiCad Logo")
     (tags "Logo KiCad")
     (attr virtual)
@@ -1065,7 +1065,7 @@
   )
 
   (module Symbol:OSHW-Logo2_7.3x6mm_SilkScreen (layer F.Cu) (tedit 0) (tstamp 5BD8756D)
-    (at 151.9428 99.1616)
+    (at 157.5054 98.679)
     (descr "Open Source Hardware Symbol")
     (tags "Logo Symbol OSHW")
     (attr virtual)
@@ -1357,7 +1357,13 @@
       (xy -2.549664 1.91989) (xy -2.469928 1.911165) (xy -2.400256 1.919918)) (layer F.SilkS) (width 0.01))
   )
 
-  (gr_text v2 (at 158.6992 101.5492) (layer F.SilkS)
+  (gr_text Run (at 150.368 102.235) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (gr_text Sel (at 129.8448 102.235) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (gr_text v2 (at 159.4358 102.2858) (layer F.SilkS)
     (effects (font (size 1.3 1.3) (thickness 0.2)))
   )
   (gr_text github.com/rattboi/gen-to-pce-controller-adapter (at 136.271 73.152) (layer F.SilkS) (tstamp 5BD83FF2)

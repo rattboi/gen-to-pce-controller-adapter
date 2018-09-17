@@ -30,7 +30,7 @@ L Connector:DB9_Male J1
 U 1 1 5B8C751B
 P 2450 4400
 F 0 "J1" H 2370 3708 50  0000 C CNN
-F 1 "DB9_Male" H 2370 3799 50  0000 C CNN
+F 1 "DB9 (M)" H 2370 3799 50  0000 C CNN
 F 2 "digikey-footprints:DSUB-9_Jack_5747840-3" H 2450 4400 50  0001 C CNN
 F 3 " ~" H 2450 4400 50  0001 C CNN
 	1    2450 4400
@@ -136,7 +136,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 4700 3250 4500
 Wire Wire Line
-	3250 4500 5900 4500
+	3250 4500 4000 4500
 $Comp
 L 74xx:74LS04 U1
 U 7 1 5B8D2343
@@ -162,14 +162,8 @@ Text GLabel 7500 3300 0    50   Input ~ 0
 +5V
 Wire Wire Line
 	4250 4950 4250 4200
-Connection ~ 4250 4200
-Wire Wire Line
-	4250 4200 7000 4200
 Wire Wire Line
 	5900 4950 5900 4500
-Connection ~ 5900 4500
-Wire Wire Line
-	5900 4500 7000 4500
 Wire Wire Line
 	6850 5450 5300 5450
 Wire Wire Line
@@ -190,8 +184,8 @@ $Comp
 L Connector_Generic_Shielded:Conn_01x08_Shielded J2
 U 1 1 5B8FEB16
 P 8850 4000
-F 0 "J2" H 8877 3976 50  0000 L CNN
-F 1 "Conn_01x08_Female" H 8877 3885 50  0000 L CNN
+F 0 "J2" H 8950 4000 50  0000 L CNN
+F 1 "M-DIN-8 (F)" H 8950 3900 50  0000 L CNN
 F 2 "w_conn_av:minidin-8" H 8850 4000 50  0001 C CNN
 F 3 "https://www.cui.com/product/resource/digikeypdf/md-sg-series.pdf" H 8850 4000 50  0001 C CNN
 	1    8850 4000
@@ -363,4 +357,64 @@ Wire Wire Line
 	3000 6150 3050 6150
 Wire Wire Line
 	3000 4300 3000 6150
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 2 1 5B9F6787
+P 4750 3400
+F 0 "SW1" H 4750 3685 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 4750 3594 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_E-Switch_EG2219_DPDT_Angled" H 4750 3400 50  0001 C CNN
+F 3 "" H 4750 3400 50  0001 C CNN
+	2    4750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 1 1 5B9F6808
+P 4750 2800
+F 0 "SW1" H 4750 3085 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 4750 2994 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_E-Switch_EG2219_DPDT_Angled" H 4750 2800 50  0001 C CNN
+F 3 "" H 4750 2800 50  0001 C CNN
+	1    4750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3300 6450 4200
+Wire Wire Line
+	6450 4200 7000 4200
+Wire Wire Line
+	7000 4500 6300 4500
+Wire Wire Line
+	4950 3500 5300 3500
+Wire Wire Line
+	6300 3500 6300 4500
+Wire Wire Line
+	4950 3300 5100 3300
+Wire Wire Line
+	4000 4500 4000 2800
+Wire Wire Line
+	4000 2800 4550 2800
+Connection ~ 4000 4500
+Wire Wire Line
+	4000 4500 5900 4500
+Wire Wire Line
+	4250 4200 4250 3400
+Wire Wire Line
+	4250 3400 4550 3400
+Connection ~ 4250 4200
+Wire Wire Line
+	4950 2700 5300 2700
+Wire Wire Line
+	5300 2700 5300 3500
+Connection ~ 5300 3500
+Wire Wire Line
+	5300 3500 6300 3500
+Wire Wire Line
+	4950 2900 5100 2900
+Wire Wire Line
+	5100 2900 5100 3300
+Connection ~ 5100 3300
+Wire Wire Line
+	5100 3300 6450 3300
 $EndSCHEMATC

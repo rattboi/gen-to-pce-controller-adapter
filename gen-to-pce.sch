@@ -1,21 +1,21 @@
 EESchema Schematic File Version 4
 LIBS:gen-to-pce-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Genesis 3-button to PC-Engine adapter"
-Date "2018-09-06"
-Rev "0.2"
+Date "2019-03-31"
+Rev "2.1"
 Comp "Bradon Kanyid"
-Comment1 ""
+Comment1 "https://github.com/rattboi/gen-to-pce-controller-adapter"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 74xx:74LS157 U3
+L gen-to-pce-rescue:74LS157-74xx U3
 U 1 1 5B8C724A
 P 7500 4200
 F 0 "U3" H 7500 5278 50  0000 C CNN
@@ -417,4 +417,37 @@ Wire Wire Line
 Connection ~ 5100 3300
 Wire Wire Line
 	5100 3300 6450 3300
+$Comp
+L Device:CP C1
+U 1 1 5CA117F7
+P 8950 5100
+F 0 "C1" H 9068 5146 50  0000 L CNN
+F 1 "10uF" H 9068 5055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8988 4950 50  0001 C CNN
+F 3 "~" H 8950 5100 50  0001 C CNN
+	1    8950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5CA121B8
+P 8950 5250
+F 0 "#PWR0103" H 8950 5000 50  0001 C CNN
+F 1 "GND" H 8955 5077 50  0000 C CNN
+F 2 "" H 8950 5250 50  0001 C CNN
+F 3 "" H 8950 5250 50  0001 C CNN
+	1    8950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5CA12A3B
+P 8950 4950
+F 0 "#PWR0106" H 8950 4800 50  0001 C CNN
+F 1 "+5V" H 8965 5123 50  0000 C CNN
+F 2 "" H 8950 4950 50  0001 C CNN
+F 3 "" H 8950 4950 50  0001 C CNN
+	1    8950 4950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
